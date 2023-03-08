@@ -1,0 +1,24 @@
+﻿<Window x:Class="SR62_2021_POP2022.Windows.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR62_2021_POP2022.Windows"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+
+        <Label Name="lblJMBG" Height="30" FontSize="18" Margin="141,56,587,330" RenderTransformOrigin="0.847,-0.457" >JMBG:</Label>
+        <TextBox Name="txtJMBG" Margin="259,56,224,330" Text="{Binding Path=JMBG, ValidatesOnDataErrors=True}"></TextBox>
+        <Label Name="lblLozinka" Height="30" FontSize="18" Margin="111,136,587,250" >LOZINKA:</Label>
+        <TextBox Name="txtLozinka" Margin="259,136,224,250" Text="{Binding Path=Lozinka, ValidatesOnDataErrors=True}"></TextBox>
+        <Label Name="lblTip" Height="30" FontSize="18" Margin="68,223,587,163" RenderTransformOrigin="0.668,3.754">TIP KORISNIKA:</Label>
+        <ComboBox Name="cmbTip" Height="30" Margin="259,223,224,163" Text="{Binding TipKorisnika}">
+            <ComboBoxItem Content="PROFESOR"></ComboBoxItem>
+            <ComboBoxItem Content="STUDENT"></ComboBoxItem>
+            <ComboBoxItem Content="ADMINISTRATOR"></ComboBoxItem>
+        </ComboBox>
+        <Button Name="btnCancel" Height="50" Width="100" Margin="259,337,433,32" Click="btnCancel_Click">ODUSTANI</Button>
+        <Button Name="btnSave" Height="50" Width="100" Margin="468,337,224,32" Click="btnLog_Click">ULOGUJ SE</Button>
+    </Grid>
+</Window>

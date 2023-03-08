@@ -1,0 +1,3 @@
+Lazar;Dejanovicc;sds;dsaa;22018465312;MUSKI;1;STUDENT;True
+Marija;Markovic;fwefwfwe;fwefwfwe;4234234;ZENSKI;3;STUDENT;True
+Milica;Milic;prof@gmail.com;sfsfs;23232423434;ZENSKI;4;PROFESOR;True

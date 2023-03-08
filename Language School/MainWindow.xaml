@@ -1,0 +1,29 @@
+﻿<Window x:Class="SR62_2021_POP2022.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR62_2021_POP2022"
+        mc:Ignorable="d"
+        Title="Skole stranih jezika" Height="450" Width="1000">
+    <Grid>
+        <Button Name="btnReg"
+                Height="150" 
+                Width="250"
+                Click="btnReg_Click" Margin="49,142,693,127">
+            Registracija
+        </Button>
+        <Button Name="btnNeregistrovani"
+                Height="150" 
+                Width="250"
+                Click="btnNeregistrovani_Click" Margin="371,142,371,127" RenderTransformOrigin="-0.092,0.48">
+            Pregled za neregistrovane korisnike
+        </Button>
+        <Button Name="btnLogin"
+                Height="150" 
+                Width="250"
+                Click="btnLogin_Click" Margin="0,142,49,127" HorizontalAlignment="Right">
+            Prijava na sistem
+        </Button>
+    </Grid>
+</Window>
